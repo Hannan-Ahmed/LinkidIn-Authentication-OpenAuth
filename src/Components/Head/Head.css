@@ -1,0 +1,6 @@
+.head>img {
+    margin: 2rem 2.99rem !important;
+    width: 5.5rem;
+    height: 4.5rem;
+    filter: saturate(2);
+}

@@ -1,0 +1,189 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Signup11 {
+    height: 100%;
+    background-color: rgba(240, 238, 238, 0.9);
+}
+
+.SignupHeading {
+    text-align: center !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    padding-top: 20px !important;
+    padding-bottom: 24px !important;
+    font-weight: 400 !important;
+    font-size: 2.2rem !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    color: rgb(95, 93, 93);
+    white-space: 3px;
+    letter-spacing: 1px;
+}
+
+.mail {
+    padding: 1.6rem 1.9rem;
+}
+
+.password {
+    padding: 0 1.9rem;
+}
+
+.mail .tagsname,
+.password .tagsname {
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    margin: 6px 0;
+    color: rgba(40, 38, 38, 0.75) !important;
+    font-size: 1.02rem;
+    font-weight: 500;
+}
+
+.tagsname {
+    display: block;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin: 6px 0;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.signupForm1 {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: auto;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.4rem;
+}
+
+.inputs>input {
+    width: 100%;
+    color: #2f2d2d;
+    background-color: white ;
+    padding: 6px 14px !important;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#aggrement1 {
+    margin: 20px 0px;
+    font-size: 0.81rem;
+    font-family: sans-serif;
+    color: rgba(73, 72, 72, 0.75);
+    letter-spacing: 0.02rem;
+    text-align: center;
+    line-height: 1rem;
+}
+
+#agree1 {
+    color: white;
+    background-color: #0A66C2;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 24px;
+    border: none;
+    font-size: 1.09rem;
+    font-weight: 600;
+    padding: 16px 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+#agree1:hover{
+    background-color: #0c4176;
+
+}
+
+.line_Or1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.7rem;
+    align-items: center;
+    color: #555353;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    margin-top: 25px;
+}
+
+.lineor {
+    width: 9.65rem;
+    height: 1px;
+    background: rgb(197, 195, 195);
+}
+
+#continue1 {
+
+    background-color: none;
+
+    width: 88%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 24px;
+    border: none;
+    color: #2f2d2d;
+    font-size: 1.03rem;
+    background: none;
+    outline: 1px solid #787777;
+    padding: 12px 30px;
+    font-family: sans-serif;
+    margin-top: 23px;
+}
+#continue1:hover{
+    cursor: pointer;
+    outline: 3px solid rgb(157, 149, 149);
+    background-color: #edeaea;
+}
+.Sign_if1:hover{
+    cursor: pointer;
+}
+.Googlecontinue1 {
+    display: flex;
+    align-items: center;
+}
+#g_img {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    left: 7.1rem;
+    top: 0.79rem;
+    border-radius: 50%;
+}
+.Sign_if1 {
+    padding: 27px 0;
+    font-size: 1.10rem;
+    font-family: sans-serif;
+    text-align: center;
+    color: #3f3e3e;
+}
+.bottom_text1 {
+    font-size: 1.02rem;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 1.4rem;
+    padding-bottom: 2.1rem;
+    color: #373535;
+}
+
+.footNav1 {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    background: white;
+    padding: 0.70rem;
+    justify-content: center;
+}
+
+.footNav1>li {
+    padding: 0.38rem;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    color: #6d6c6c;
+}

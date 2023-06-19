@@ -10,24 +10,27 @@ import SampleDashboard from './Components/Pages/OTP/SampleDashboard';
 import Signin from './Components/Signin/Signin';
 
 function App() {
-  
+
 
   return (
     <div>
-     <Router>
-      <Routes>
-        <Route path="/" element={<Signup />} />
-        <Route path="/SignupName" element={<Signup_Name />} />
-        <Route path="/SignupWelcome" element={<Welcome />} />
-        <Route path="/Profile" element={<Profile />} />
-        <Route path="/otp" element={<Otp />} />
-        <Route path="/signin" element={<Signin />} />
         
-        {/*This Route is  just for the dashobaord i-e its sample dashboard    */}
-        <Route path="/dashboard" element={<SampleDashboard />} />
-      
-      </Routes>
-    </Router>
+      <Router>
+
+        <Routes>
+          <Route path="/" element={<Signup />} />
+          <Route path="/SignupName" element={<Signup_Name />} />
+          <Route path="/SignupWelcome" element={<Welcome />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/otp" element={<Otp />} />
+          <Route path="/signin" element={<Signin />} />
+
+          {/*This Route is  just for the dashobaord i-e its sample dashboard    */}
+          <Route path="/dashboard" element={ <SampleDashboard />} />
+
+        </Routes>
+      </Router>
+
 
     </div>
   )

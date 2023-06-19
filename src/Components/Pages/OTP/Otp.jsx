@@ -57,7 +57,7 @@ function Otp() {
                 </div>
 
                 <div>
-                    <button onClick={MoveToDashboard} className='confirm' disabled={verify} id='agree'>Agree and confirm</button>
+                    <button onClick={MoveToDashboard} className='confirm'  disabled={verify} id='agree'>Agree and confirm</button>
                 </div>
 
             </div>

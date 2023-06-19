@@ -72,19 +72,19 @@
    cursor: pointer;
 }
 
-button:disabled,
-button[disabled] {
+#agree:disabled,
+#agree[disabled] {
    background-color: hsla(0, 0%, 100%, 0.12) !important;
    color: #e0dfdf9e !important;
 }
 
-button:enabled,
-button[enabled] {
+#agree:enabled,
+#agree[enabled] {
    color: white;
    background-color: #0A66C2;
 }
 
-button:disabled:hover {
+#agree:disabled:hover {
    cursor: not-allowed;
 }
 

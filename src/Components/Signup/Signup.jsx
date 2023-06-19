@@ -1,6 +1,7 @@
 import React from 'react'
 import './Signup.css'
 import G from '../imgaes/g.jpg'
+import Linkdin from '../imgaes/Linkidin.png'
 import FooterImg from '../imgaes/footimg.jpg'
 import { useNavigate } from "react-router-dom";
 import Head from '../Head/Head'
@@ -57,6 +58,11 @@ function Signup() {
         <div className='Googlecontinue1'>
           <div><img id='g_img' src={G} alt="" /></div>
           <div id='continue1' className='SiginContinue'>Continue with Google </div>
+        </div>
+
+        <div className='Googlecontinue1'>
+          <div><img id='g_img' className='LinkedinContinue'  src={Linkdin} alt="" /></div>
+          <div id='continue1' className='SiginContinue'>Continue with LinkedIn </div>
         </div>
 
         <div className='Sign_if1'>

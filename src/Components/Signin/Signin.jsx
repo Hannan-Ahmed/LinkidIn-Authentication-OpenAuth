@@ -1,20 +1,48 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Signin.css"
 import Head from '../Head/Head'
-import apple from '../imgaes/apple.jpg'
+import Linkdin from '../imgaes/Linkidin.png'
 import FooterImg from '../imgaes/footimg.jpg'
 import { useNavigate } from 'react-router-dom'
+import G from '../imgaes/g.jpg'
+import { googleLogout, useGoogleLogin } from '@react-oauth/google';
+
 
 function Signin() {
-    
-    const navigate=useNavigate()
-    const Movetosignup=()=>{
+    const navigate = useNavigate()
+
+    // *********************  GOOGLE LOGIN FUNCTIONALITY *********************************
+    const [user, setUser] = useState([]);
+    const [check, setcheck] = useState(false)
+
+    const login = useGoogleLogin({
+        onSuccess: (codeResponse) => {
+            setUser(codeResponse)
+            setcheck(true)
+        },
+        onError: (error) => console.log('Login Failed:', error)
+    });
+
+
+    // ***********************  GOOGLE LOGIN FUNCTIONALITY ENDS HERE *********************************
+
+
+    const Movetosignup = () => {
         navigate('/')
     }
-    
+
+    const checkFunction = () => {
+        console.log("sdsdd")
+        localStorage.setItem('tocken', user.access_token)
+        navigate('/dashboard')
+    }
+
     return (
         <div>
+
             <Head />
+
+            {check ? checkFunction() : null}
 
             <div className="signin">
 
@@ -24,7 +52,9 @@ function Signin() {
                 <div className='signininputBox'>
 
                     <div className='SignInputs'><input placeholder='Email or Phone' type="text" name="" id="" /></div>
+
                     <div className='SignInputs'><input placeholder='Password' type="password" name="" id="" /></div>
+
                 </div>
 
                 <div className='Forgetpass'>Forgett Password?</div>
@@ -39,8 +69,14 @@ function Signin() {
                     </div>
 
                     <div className='Googlecontinue1'>
-                        <div><img id='g_img' src={apple} style={{ position:'relative',left:'5.5rem', width: '1.4rem', height: '1.41rem' }} alt="" /></div>
-                        <div id='continue1'>Continue with Google </div>
+                        <div><img id='g_img' src={G} style={{ position: 'relative', left: '5.8rem' }} alt="" /></div>
+                        <div id='continue1' onClick={() => login()}>Continue with Google </div>
+
+                    </div>
+
+                    <div className='Googlecontinue1'>
+                        <div><img id='g_img' className='LinkedinContinue' src={Linkdin} alt="" /></div>
+                        <div id='continue1'>Continue with LinkedIn </div>
                     </div>
 
                 </div>
@@ -68,3 +104,5 @@ function Signin() {
 }
 
 export default Signin
+
+

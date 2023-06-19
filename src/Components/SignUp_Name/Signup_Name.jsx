@@ -24,12 +24,12 @@ const navigate=useNavigate()
 
         <div className="mail">
           <span className='tagsname'>First Name</span>
-          <span className='inputs'><input type="text" name="" id="" /></span>
+          <span className='inputs'><input  type="text" name="" id="fname" /></span>
         </div>
 
         <div className="password">
           <span className='tagsname'>Last Name</span>
-          <span className='inputs'><input type="text" name="" id="" /></span>
+          <span className='inputs'><input type="text" name="" id="lname" /></span>
         </div>
 
         <div>
